@@ -1,8 +1,13 @@
-APP_VERSION = "0.1.0"
+APP_NAME = "OmniHack"
+APP_VERSION = "0.2.0"
+
+
+def build_status_message(environment="teste"):
+    return f"{APP_NAME} iniciado. Versao {APP_VERSION}. Ambiente: {environment}."
 
 
 def main():
-    print(f"OmniHack iniciado. Versao {APP_VERSION}.")
+    print(build_status_message())
 
 
 if __name__ == "__main__":
